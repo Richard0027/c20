@@ -1,7 +1,7 @@
 
-var r = 0;
-var g = 50;
-var b=255;
+var r = 100;
+var g = 255;
+var b = 60;
 
 // INITIALIZE ALL YOUR VARIABLES
 // Ideally you would create 3 variables. red blue green or r, g, b
@@ -14,8 +14,15 @@ function setup(){
 
 
 function draw(){
+background(r, g, b);
 
-  // change the value of Red based on the mouse movement about the X axis
+ Fill(250,118,222);
+ellipse(mouseX,200,64,64);
+
+r = map(mouseX, 190, 400, 200, 205);
+g = map(mouseX, 70, 400, 20, 220);
+b = map(mouseX, 200, 400,200, 220);
+// change the value of Red based on the mouse movement about the X axis
   // change the value of Green based on the mouse movement about the X axis
   // change the value of Blue based on the mouse movement about the X axis
 
